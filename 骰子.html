@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+    <style>
+        .container {
+            margin: calc(50vh - 78px) auto;
+            width: calc(156px * 6);
+            height: 156px;
+        }
+
+        .red,
+        .black {
+            background-image: linear-gradient(to right, #ddd, white);
+            ;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 2px;
+            border-radius: 10px;
+            box-shadow: 1px 3px 5px 0px rgb(0, 0, 0, 0.5);
+            float: left;
+            position: relative;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .red div {
+            background: red;
+        }
+
+        .black div {
+            background: black;
+        }
+
+        .pos1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 80%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos4 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos5 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos6 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 80%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos7 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos8 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pos9 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 80%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="red">
+            <div class="pos5"></div>
+        </div>
+        <div class="black">
+            <div class="pos3"></div>
+            <div class="pos7"></div>
+        </div>
+        <div class="black">
+            <div class="pos3"></div>
+            <div class="pos5"></div>
+            <div class="pos7"></div>
+        </div>
+        <div class="red">
+            <div class="pos1"></div>
+            <div class="pos3"></div>
+            <div class="pos7"></div>
+            <div class="pos9"></div>
+        </div>
+        <div class="black">
+            <div class="pos1"></div>
+            <div class="pos3"></div>
+            <div class="pos5"></div>
+            <div class="pos7"></div>
+            <div class="pos9"></div>
+        </div>
+        <div class="black">
+            <div class="pos1"></div>
+            <div class="pos3"></div>
+            <div class="pos4"></div>
+            <div class="pos6"></div>
+            <div class="pos7"></div>
+            <div class="pos9"></div>
+        </div>
+    </div>
+</body>
+
+</html>
